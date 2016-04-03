@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Video Player</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="http://fonts.googleapis.com/css?family=Nunito:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    
+  </head>
+  <body>
+    
+   	<div id="video-player" class="clearfix">
+      <video id="myVideo" preload="metadata" poster="video/poster.jpg">
+        <source src="video/video.ogg" type="video/ogg">
+        <source src="video/video.mp4" type="video/mp4">
+        <track id="cc" label="English" kind="subtitles" srclang="en" src="video/captions.vtt" default>
+        Your browser does not support the <code>video</code> element.
+      </video>
+      <div id="progress-bar" title="Progress bar" class="clearfix">
+          <div id="buffer-bar"></div>
+          <div id="time-bar"></div>
+        </div>
+      <div id="video-controls">
+      	<div class="left-controls">
+        <button id="button-play" type="button" title="Play"></button>
+        <button id="button-pause" type="button" title="Pause"></button>
+        <button id="button-replay" type="button" title="Replay"></button>
+        <div id="time-current" title="Current time"><span class="time">0:00 /</span></div>
+        <div id="time-duration" title="Duration"><span class="time">0:00</span></div>
+        </div>
+        <div class="right-controls">
+        <button id="button-fullscreen" type="button" title="Fullscreen"></button>
+        <div id="volume-bar" title="Volume bar">
+          <div id="volume-slide"></div>
+        </div>
+        <button id="volume-on" type="button" title="Volume on"></button>
+        <button id="volume-off" type="button" title="Volume off"></button>
+        <button id="button-captions" type="button" title="Captions"></button>
+         <button id="button-play-speed" type="button" title="Play speed"></button>
+        <div id="captions-container" class="clearfix">
+          <label title="Captions on"><input type="radio" name="captions" id="on" >On</label><br/>
+          <label title="Captions off"><input type="radio" name="captions" id="off" checked="checked">Off</label>
+        </div>
+        <div id="play-speed-container" class="clearfix">
+          <label title="Play speed 2x"><input type="radio" name="play-speed" id="speed20">2.0x</label><br/>
+          <label title="Play speed 1.5x"><input type="radio" name="play-speed" id="speed15">1.5x</label><br/>
+          <label title="Play speed 1x"><input type="radio" name="play-speed" id="speed10" checked>1.0x</label><br/>
+          <label title="Play speed 0.5x"><input type="radio" name="play-speed" id="speed05">0.5x</label>
+        </div>
+        </div>
+      </div>
+      </div>
+      <div id="video-transcript" class="clearfix">
+       <p class="transcript"><span class="ph01">Now that we've looked at the architecture of the internet, let's see how you might</span> <span class="ph02"> connect your personal devices to the internet inside your house.</span> <span class="ph03"> Well there are many ways to connect to the internet, and</span> <span class="ph04">most often people connect wirelessly.</span> <span class="ph05">Let's look at an example of how you can connect to the internet.</span> <span class="ph06">If you live in a city or a town, you probably have a coaxial cable for</span> <span class="ph07">cable Internet, or a phone line if you have DSL, running to the outside of</span> <span class="ph08">your house, that connects you to the Internet Service Provider, or ISP.</span> <span class="ph09">If you live far out in the country, you'll more likely have</span> <span class="ph10">a dish outside your house, connecting you wirelessly to your closest ISP, or</span> <span class="ph11">you might also use the telephone system.</span> <span class="ph12">Whether a wire comes straight from the ISP hookup outside your house, or</span> <span class="ph13">it travels over radio waves from your roof,</span> <span class="ph14">the first stop a wire will make once inside your house, is at your modem.</span> <span class="ph15">A modem is what connects the internet
+  to your network at home.</span> <span class="ph16">A few common residential modems are DSL or</span></p>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
