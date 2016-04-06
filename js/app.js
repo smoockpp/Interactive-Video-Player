@@ -1,5 +1,4 @@
-
-	var videoPlayerUI = {
+var videoPlayerUI = {
 		// Defining Video controls elements
 		myVideo: document.getElementById('#myVIdeo'),
 		videoPlayer: $('#video-player'),
@@ -317,21 +316,25 @@
 			// Function to toggle captions container on
 			toggleCaptionsOn: function() {
 				videoPlayerUI.captionsContainer.css('z-index', '10000');
+                videoPlayerUI.captionsContainer.css('opacity', '1');
 			},
 
 			// Function to toggle captions container off
 			toggleCaptionsOff: function() {
 				videoPlayerUI.captionsContainer.css('z-index', '-1');
+                videoPlayerUI.captionsContainer.css('opacity', '0');
 			},
 
 			// Function to toggle play speed container on
 			togglePlaySpeedOn: function() {
 				videoPlayerUI.playSpeedContainer.css('z-index', '10000');
+                videoPlayerUI.playSpeedContainer.css('opacity', '1');
 			},
 
 			// Function to toggle play speed container off
 			togglePlaySpeedOff: function() {
 				videoPlayerUI.playSpeedContainer.css('z-index', '-1');
+                videoPlayerUI.playSpeedContainer.css('opacity', '0');
 			},
 
 			// Function for switching on and off closed captions
