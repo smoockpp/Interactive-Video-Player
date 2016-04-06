@@ -172,7 +172,7 @@ button#button-captions {
 }
 
 #captions-container {
-
+  opacity: 0;  
   position: relative;
   float: right;
   z-index: -1;
@@ -194,7 +194,7 @@ button#button-play-speed {
 }
 
  #play-speed-container {
-
+  opacity: 0;
   position: relative;
   float: right;
   z-index: -1;
@@ -442,7 +442,7 @@ span.ph16:hover {
   }
 
   #captions-container {
-    display: none;
+    opacity: 0;
     position: relative;
     float: right;
     z-index: 100000;
@@ -464,7 +464,7 @@ span.ph16:hover {
   }
 
    #play-speed-container {
-    display: none;
+    opacity: 0;
     position: relative;
     float: right;
     z-index: 100000;
